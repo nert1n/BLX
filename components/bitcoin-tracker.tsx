@@ -200,7 +200,7 @@ export default function BitcoinTracker() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-yellow-100 dark:from-gray-900 dark:to-gray-800 p-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-6">
           <div className="flex items-center gap-4">
             <div className="p-3 bg-orange-100 dark:bg-orange-900 rounded-lg">
               <Bitcoin className="h-8 w-8 text-orange-600 dark:text-orange-400" />

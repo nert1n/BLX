@@ -202,7 +202,7 @@ export default function InteractiveWorkspace() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-6">
           <div>
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Interactive Workspace</h1>
             <p className="text-gray-600 dark:text-gray-300">
@@ -217,7 +217,7 @@ export default function InteractiveWorkspace() {
 
         <div
           ref={workspaceRef}
-          className="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg min-h-[600px] overflow-hidden"
+          className="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg min-h-[600px] overflow-scroll"
           style={{
             backgroundImage: `
               linear-gradient(to right, #9ca3af 1px, transparent 1px),
