@@ -264,37 +264,37 @@ export default function InteractiveWorkspace() {
 
                 {/* Resize handles */}
                 <div
-                  className="absolute bottom-0 right-0 w-4 h-4 rounded-tl rounded-br-2xl bg-black dark:bg-white cursor-se-resize opacity-25 hover:opacity-100 transition-opacity"
+                  className="absolute bottom-0 right-0 w-4 h-4 rounded-tl rounded-br-xl bg-black dark:bg-white cursor-se-resize opacity-10 hover:opacity-100 transition-opacity"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "bottom-right")}
                 />
                 <div
-                  className="absolute bottom-0 left-0 w-4 h-4 rounded-tr rounded-bl-2xl bg-black dark:bg-white  cursor-sw-resize opacity-25 hover:opacity-100 transition-opacity"
+                  className="absolute bottom-0 left-0 w-4 h-4 rounded-tr rounded-bl-xl bg-black dark:bg-white  cursor-sw-resize opacity-10 hover:opacity-100 transition-opacity"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "bottom-left")}
                 />
                 <div
-                  className="absolute top-0 right-0 w-4 h-4 rounded-bl rounded-tr-2xl bg-black dark:bg-white  cursor-ne-resize opacity-25 hover:opacity-100 transition-opacity"
+                  className="absolute top-0 right-0 w-4 h-4 rounded-bl rounded-tr-xl bg-black dark:bg-white  cursor-ne-resize opacity-10 hover:opacity-100 transition-opacity"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "top-right")}
                 />
                 <div
-                  className="absolute top-0 left-0 w-4 h-4 rounded-br rounded-tl-2xl bg-black dark:bg-white  cursor-nw-resize opacity-25 hover:opacity-100 transition-opacity"
+                  className="absolute top-0 left-0 w-4 h-4 rounded-br rounded-tl-xl bg-black dark:bg-white  cursor-nw-resize opacity-10 hover:opacity-100 transition-opacity"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "top-left")}
                 />
 
                 {/* Edge resize handles */}
                 <div
-                  className="absolute right-0 top-1/2 w-2 h-8 rounded-l bg-black dark:bg-white  cursor-e-resize opacity-25 hover:opacity-100 transition-opacity -translate-y-1/2"
+                  className="absolute right-0 top-1/2 w-2 h-8 rounded-l bg-black dark:bg-white  cursor-e-resize opacity-10 hover:opacity-100 transition-opacity -translate-y-1/2"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "right")}
                 />
                 <div
-                  className="absolute left-0 top-1/2 w-2 h-8 rounded-r bg-black dark:bg-white  cursor-w-resize opacity-25 hover:opacity-100 transition-opacity -translate-y-1/2"
+                  className="absolute left-0 top-1/2 w-2 h-8 rounded-r bg-black dark:bg-white  cursor-w-resize opacity-10 hover:opacity-100 transition-opacity -translate-y-1/2"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "left")}
                 />
                 <div
-                  className="absolute bottom-0 left-1/2 w-8 h-2 rounded-t bg-black dark:bg-white  cursor-s-resize opacity-25 hover:opacity-100 transition-opacity -translate-x-1/2"
+                  className="absolute bottom-0 left-1/2 w-8 h-2 rounded-t bg-black dark:bg-white  cursor-s-resize opacity-10 hover:opacity-100 transition-opacity -translate-x-1/2"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "bottom")}
                 />
                 <div
-                  className="absolute top-0 left-1/2 w-8 h-2 rounded-b bg-black dark:bg-white  cursor-n-resize opacity-25 hover:opacity-100 transition-opacity -translate-x-1/2"
+                  className="absolute top-0 left-1/2 w-8 h-2 rounded-b bg-black dark:bg-white  cursor-n-resize opacity-10 hover:opacity-100 transition-opacity -translate-x-1/2"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "top")}
                 />
               </div>

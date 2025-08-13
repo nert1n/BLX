@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import "./globals.css"
-import { Navigation } from "@/components/navigation"
+import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ html {
         `}</style>
       </head>
       <body className="min-h-screen flex flex-col">
-        <Navigation />
+        <Header />
         <main className="pt-16 flex-1">{children}</main>
         <Footer />
       </body>

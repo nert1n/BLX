@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 import { useState, useEffect } from "react"
 import Image from "next/image";
 
-export function Navigation() {
+export function Header() {
   const pathname = usePathname()
   const [isDark, setIsDark] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -39,14 +39,14 @@ export function Navigation() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <Link
               href="/"
               className="font-bold text-xl text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
             >
-              <Image src={"logo.png"} alt={"Logo BLX"} width={100} height={100}/>
+              <Image src={isDark ? "logo.png" : "logo-dark.png"} alt={"Logo BLX"} width={100} height={100}/>
             </Link>
 
             {/* Desktop Navigation */}
