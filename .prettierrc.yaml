@@ -1,0 +1,15 @@
+tabWidth: 2
+useTabs: true
+semi: true
+singleQuote: false
+trailingComma: es5
+bracketSpacing: true
+jsxBracketSameLine: true
+arrowParens: avoid
+endOfLine: lf
+printWidth: 80
+quoteProps: as-needed
+jsxSingleQuote: false
+htmlWhitespaceSensitivity: css
+proseWrap: preserve
+embeddedLanguageFormatting: auto
