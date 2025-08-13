@@ -153,10 +153,10 @@ export default function InteractiveWorkspace() {
               newWidth = Math.max(100, snapToGrid(resizeState.startWidth - deltaX))
             }
             if (resizeState.direction.includes("bottom")) {
-              newHeight = Math.max(50, snapToGrid(resizeState.startHeight + deltaY))
+              newHeight = Math.max(75, snapToGrid(resizeState.startHeight + deltaY))
             }
             if (resizeState.direction.includes("top")) {
-              newHeight = Math.max(50, snapToGrid(resizeState.startHeight - deltaY))
+              newHeight = Math.max(75, snapToGrid(resizeState.startHeight - deltaY))
             }
 
             return { ...block, width: newWidth, height: newHeight }
@@ -230,7 +230,7 @@ export default function InteractiveWorkspace() {
             <Card
               key={block.id}
               className={cn(
-                "absolute border-2 cursor-move select-none transition-shadow hover:shadow-lg",
+                "absolute border-2 p-0 cursor-move select-none transition-shadow hover:shadow-lg",
                 dragState.blockId === block.id && "shadow-xl ring-2 ring-blue-500",
                 resizeState.blockId === block.id && "shadow-xl ring-2 ring-green-500",
               )}
@@ -253,7 +253,7 @@ export default function InteractiveWorkspace() {
                 <Button
                   size="sm"
                   variant="destructive"
-                  className="absolute top-2 right-2 h-6 w-6 p-0"
+                  className="absolute cursor-pointer rounded z-100 top-4 left-4 h-5 w-5 p-0"
                   onClick={(e) => {
                     e.stopPropagation()
                     deleteBlock(block.id)
@@ -264,37 +264,37 @@ export default function InteractiveWorkspace() {
 
                 {/* Resize handles */}
                 <div
-                  className="absolute bottom-0 right-0 w-4 h-4 bg-blue-500 cursor-se-resize opacity-0 hover:opacity-100 transition-opacity"
+                  className="absolute bottom-0 right-0 w-4 h-4 rounded-tl rounded-br-2xl bg-black dark:bg-white cursor-se-resize opacity-25 hover:opacity-100 transition-opacity"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "bottom-right")}
                 />
                 <div
-                  className="absolute bottom-0 left-0 w-4 h-4 bg-blue-500 cursor-sw-resize opacity-0 hover:opacity-100 transition-opacity"
+                  className="absolute bottom-0 left-0 w-4 h-4 rounded-tr rounded-bl-2xl bg-black dark:bg-white  cursor-sw-resize opacity-25 hover:opacity-100 transition-opacity"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "bottom-left")}
                 />
                 <div
-                  className="absolute top-0 right-0 w-4 h-4 bg-blue-500 cursor-ne-resize opacity-0 hover:opacity-100 transition-opacity"
+                  className="absolute top-0 right-0 w-4 h-4 rounded-bl rounded-tr-2xl bg-black dark:bg-white  cursor-ne-resize opacity-25 hover:opacity-100 transition-opacity"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "top-right")}
                 />
                 <div
-                  className="absolute top-0 left-0 w-4 h-4 bg-blue-500 cursor-nw-resize opacity-0 hover:opacity-100 transition-opacity"
+                  className="absolute top-0 left-0 w-4 h-4 rounded-br rounded-tl-2xl bg-black dark:bg-white  cursor-nw-resize opacity-25 hover:opacity-100 transition-opacity"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "top-left")}
                 />
 
                 {/* Edge resize handles */}
                 <div
-                  className="absolute right-0 top-1/2 w-2 h-8 bg-blue-500 cursor-e-resize opacity-0 hover:opacity-100 transition-opacity -translate-y-1/2"
+                  className="absolute right-0 top-1/2 w-2 h-8 rounded-l bg-black dark:bg-white  cursor-e-resize opacity-25 hover:opacity-100 transition-opacity -translate-y-1/2"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "right")}
                 />
                 <div
-                  className="absolute left-0 top-1/2 w-2 h-8 bg-blue-500 cursor-w-resize opacity-0 hover:opacity-100 transition-opacity -translate-y-1/2"
+                  className="absolute left-0 top-1/2 w-2 h-8 rounded-r bg-black dark:bg-white  cursor-w-resize opacity-25 hover:opacity-100 transition-opacity -translate-y-1/2"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "left")}
                 />
                 <div
-                  className="absolute bottom-0 left-1/2 w-8 h-2 bg-blue-500 cursor-s-resize opacity-0 hover:opacity-100 transition-opacity -translate-x-1/2"
+                  className="absolute bottom-0 left-1/2 w-8 h-2 rounded-t bg-black dark:bg-white  cursor-s-resize opacity-25 hover:opacity-100 transition-opacity -translate-x-1/2"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "bottom")}
                 />
                 <div
-                  className="absolute top-0 left-1/2 w-8 h-2 bg-blue-500 cursor-n-resize opacity-0 hover:opacity-100 transition-opacity -translate-x-1/2"
+                  className="absolute top-0 left-1/2 w-8 h-2 rounded-b bg-black dark:bg-white  cursor-n-resize opacity-25 hover:opacity-100 transition-opacity -translate-x-1/2"
                   onMouseDown={(e) => handleMouseDown(e, block.id, "resize", "top")}
                 />
               </div>
