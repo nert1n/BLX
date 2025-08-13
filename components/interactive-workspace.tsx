@@ -220,8 +220,8 @@ export default function InteractiveWorkspace() {
           className="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg min-h-[600px] overflow-hidden"
           style={{
             backgroundImage: `
-              linear-gradient(to right, #e5e7eb 1px, transparent 1px),
-              linear-gradient(to bottom, #e5e7eb 1px, transparent 1px)
+              linear-gradient(to right, #9ca3af 1px, transparent 1px),
+              linear-gradient(to bottom, #9ca3af 1px, transparent 1px)
             `,
             backgroundSize: `${GRID_SIZE}px ${GRID_SIZE}px`,
           }}

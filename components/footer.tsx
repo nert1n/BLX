@@ -4,7 +4,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-4">Interactive SPA Demo</h3>
+            <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-4">BLX</h3>
             <p className="text-gray-600 dark:text-gray-300 text-sm">
               A showcase of modern web technologies including React, Next.js, WebSocket integration, and interactive UI
               components with persistent state management.

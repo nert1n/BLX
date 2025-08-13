@@ -13,7 +13,7 @@ export default function HomePage() {
             Modern SPA Demo
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Interactive SPA Demo
+            BLX - Interactive SPA Demo
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Explore two powerful interactive features: a draggable workspace with persistent state and real-time Bitcoin
